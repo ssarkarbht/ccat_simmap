@@ -1,0 +1,46 @@
+ # Query
+query: "1"
+
+# Context file containing TODs
+context: './context/context.yaml'
+
+# Telescope info
+freq: 'f280'
+site: 'so_lat'
+
+# Mapping area footprint
+area: './context/geom.fits'
+
+# Output Directory and file name prefix
+odir: './output_MLmaps/'
+prefix: 'ml_maps'
+
+# Detectors info. null by default
+#tods: [::100] # Restrict TOD selections by index
+#ntod: 3 # Special case of `tods` above. Implemented as follows: [:ntod]
+#nset: 10 # Number of detsets kept
+#max-dets: 200 # Maximum dets kept
+#wafer: 'w17' # Restrict which wafers are mapped. Can do multiple wafers
+
+# Mapmaking meta
+comps: 'T' # TQU
+inject: null
+nocal: True # No relcal or abscal
+downsample: 1 # Downsample TOD by this factor
+tiled: 0 # Tiling boolean (0 or 1)
+nmat-dir: './nmats/' # Dir to save or load nmat
+nmat: 'corr' # 'corr' or 'uncorr'
+maxiter: 500 # Max number of iterative steps
+nmat_mode: 'build' # 'cache', 'build', 'load' or 'save'
+center_at: null
+window: 0.0
+inject: null
+
+#Calibration
+#No calib for sim data
+nocal: True
+
+
+# Scripting tools
+verbose: True
+quiet: False

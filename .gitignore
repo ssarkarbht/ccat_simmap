@@ -1,0 +1,7 @@
+__pycache__
+context
+output_MLmaps
+*.h5
+*.g3
+*.sqlite
+*.fits
